@@ -6,10 +6,15 @@ USE:
 INFO: 
 - It checks buying and selling of shares from a txt file that has the following format:
 - buy 50 price 25
+
 buy 40 price 22
+
 buy 30 price 33
+
 sell 110 price 30
+
 buy 25 price 35
+
 sell 30 price 40
 - If selling more shares than I have it shows error
 - WARNING! Format must strictly have the form above
