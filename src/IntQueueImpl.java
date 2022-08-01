@@ -37,10 +37,12 @@ public class IntQueueImpl implements IntQueue {
 
 		int removedItem = firstNode.data;
 
-		if ( firstNode == lastNode )
-		firstNode = lastNode = null;
-		else
-		firstNode = firstNode.next;
+		if ( firstNode == lastNode ) {
+			firstNode = lastNode = null;
+		}
+		else {
+			firstNode = firstNode.next;
+		}
 
 		return removedItem;
 	}
@@ -49,9 +51,8 @@ public class IntQueueImpl implements IntQueue {
 		if(isEmpty()) {
 			throw new NoSuchElementException(name);
 		}
-		
-		int returnedNode = firstNode.data;
-		return returnedNode;
+
+		return firstNode.data;
 	}
 
 	public void printQueue(PrintStream stream) {

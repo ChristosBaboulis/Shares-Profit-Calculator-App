@@ -4,14 +4,14 @@ public class NetBenefit {
 
 	public static void main(String[] args) {
 		String path= null;
-		String line = null;
+		String line;
 		IntQueueImpl Queue = new IntQueueImpl();
-		File f = null;
-		FileReader fr = null;
+		File f;
+		FileReader fr;
 		BufferedReader br = null;
 
 		if (0 < args.length) {
-			   path = new String(args[0]);
+			   path = args[0];
 			} else {
 			   System.err.println("Invalid arguments count:" + args.length);
 			   System.exit(1);
@@ -22,15 +22,15 @@ public class NetBenefit {
 			fr = new FileReader(f);
 			br = new BufferedReader(fr);
 			line = br.readLine();
-			int buyNumber = 0;
+			int buyNumber;
 			int buyPrice = 0;
 			int cost = 0;
 			int total = 0;
-			int sellNumber = 0;
-			int sellPrice = 0;
-			int cost2 = 0;
+			int sellNumber;
+			int sellPrice;
+			int cost2;
 			int profit = 0;
-			int index = 0;
+			int index;
 			
 			if(line.trim().startsWith("sell")){
 				System.out.println("Error! Tries to sell more than it has.");
@@ -56,7 +56,7 @@ public class NetBenefit {
 							break;
 						}
 						else{
-							//we calculate the profit of the selling by substracting from the cost of sale the costs of buying and adding what there is still left
+							//we calculate the profit of the selling by subtracting from the cost of sale the costs of buying and adding what there is still left
 							total -= sellNumber;
 							sellPrice = Integer.parseInt(line.substring(index + 6));
 							cost2 = sellNumber * sellPrice;
@@ -73,7 +73,7 @@ public class NetBenefit {
 						}
 					}
 				}
-				//if not all shares were sold I substract from the profit the price of those that are still left unsold
+				//if not all shares were sold I subtract from the profit the price of those that are still left unsold
 				if(cost>0){
 					profit = profit - cost;
 				}
