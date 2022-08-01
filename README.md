@@ -22,11 +22,15 @@ sell 30 price 40
 - WARNING! Format must strictly have the form above
 
 HOW TO RUN: 
-- Intellij: You have to pass the HTML file as an argument on the main method: Run -> Edit Configurations -> + -> Application -> Give a name -> Give main class name (NetBenefit) -> Give program arguments (shares_trade_file.txt) -> OK 
+- Intellij:
+
+You have to pass the HTML file as an argument on the main method: Run -> Edit Configurations -> + -> Application -> Give a name -> Give main class name (NetBenefit) -> Give program arguments (shares_trade_file.txt) -> OK 
 
 File "shares_trade_file.txt" has to be in project file (outside of src file) 
 
-- CMD: "shares_trade_file.txt" file must be in same folder with NetBenefit.java file 
+- CMD: 
+
+"shares_trade_file.txt" file must be in same folder with NetBenefit.java file 
 
 Go to java files folder through cmd navigation ( cd ) -> javac *.java -> java TagMatching test_html_file.html
 
