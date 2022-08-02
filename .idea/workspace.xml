@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e20071ed-35b2-433e-b27d-d36decff3e8e" name="Changes" comment="warnings fixes">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IntQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/interfaces/IntQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IntQueueImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/structures/IntQueueImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NetBenefit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/runnables/NetBenefit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QueueNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/objects/QueueNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StackNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/objects/StackNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StringStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/interfaces/StringStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StringStackImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/structures/StringStackImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="e20071ed-35b2-433e-b27d-d36decff3e8e" name="Changes" comment="final fixes - packages" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659352824439</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="final fixes - packages">
+      <created>1659441165341</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659441165341</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,6 +99,7 @@
     <MESSAGE value="PDF ADD" />
     <MESSAGE value="Final Commit" />
     <MESSAGE value="warnings fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="warnings fixes" />
+    <MESSAGE value="final fixes - packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="final fixes - packages" />
   </component>
 </project>
