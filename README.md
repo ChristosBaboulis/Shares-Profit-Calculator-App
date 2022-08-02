@@ -30,9 +30,12 @@ File "shares_trade_file.txt" has to be in project file (outside of src file)
 
 - CMD: 
 
-"shares_trade_file.txt" file must be in same folder with NetBenefit.java file 
+"shares_trade_file.txt" file must be in src folder
 
 Go to java files folder through cmd navigation ( cd ) -> javac *.java -> java TagMatching test_html_file.html
+
+
+![Screenshot_2](https://user-images.githubusercontent.com/48126722/182368153-fa93d163-bdcb-4454-a484-b3605c7dedc0.png)
 
 
 
