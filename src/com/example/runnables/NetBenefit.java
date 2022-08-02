@@ -1,3 +1,6 @@
+package com.example.runnables;
+
+import com.example.structures.IntQueueImpl;
 import java.io.*;
 
 public class NetBenefit {

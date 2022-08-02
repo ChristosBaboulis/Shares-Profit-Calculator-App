@@ -1,3 +1,7 @@
+package com.example.structures;
+
+import com.example.interfaces.IntQueue;
+import com.example.objects.QueueNode;
 import java.io.PrintStream;
 import java.util.NoSuchElementException;
 
@@ -25,7 +29,7 @@ public class IntQueueImpl implements IntQueue {
 		if ( isEmpty() )
 		firstNode = lastNode = node;
 		else {
-			lastNode.next = node;
+			lastNode.setNext(node);
 			lastNode = node;
 		}
 	}
@@ -35,13 +39,13 @@ public class IntQueueImpl implements IntQueue {
 			throw new NoSuchElementException(name);
 		}
 
-		int removedItem = firstNode.data;
+		int removedItem = firstNode.getInt();
 
 		if ( firstNode == lastNode ) {
 			firstNode = lastNode = null;
 		}
 		else {
-			firstNode = firstNode.next;
+			firstNode = firstNode.getNext();
 		}
 
 		return removedItem;
@@ -52,7 +56,7 @@ public class IntQueueImpl implements IntQueue {
 			throw new NoSuchElementException(name);
 		}
 
-		return firstNode.data;
+		return firstNode.getInt();
 	}
 
 	public void printQueue(PrintStream stream) {
@@ -65,8 +69,8 @@ public class IntQueueImpl implements IntQueue {
 		
 		while ( current != null )
 		{
-			stream.printf( "%s ", current.data );
-			current = current.next;
+			stream.printf( "%s ", current.getInt() );
+			current = current.getNext();
 		}
 
 		stream.println( "\n" );
@@ -82,7 +86,7 @@ public class IntQueueImpl implements IntQueue {
 		while ( current != null )
 		{
 			i++;
-			current = current.next;
+			current = current.getNext();
 		}
 		return i;
 	}

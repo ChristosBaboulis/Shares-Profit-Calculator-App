@@ -1,3 +1,7 @@
+package com.example.structures;
+
+import com.example.interfaces.StringStack;
+import com.example.objects.StackNode;
 import java.io.PrintStream;
 import java.util.NoSuchElementException;
 
@@ -23,14 +27,10 @@ public class StringStackImpl implements StringStack{
 	
 	public void push(String item) {
 		StackNode node = new StackNode(item);
-		if(isEmpty()) {
-			firstNode = node;
+		if (!isEmpty()) {
+			node.setNext(firstNode);
 		}
-		else {
-			node.next = firstNode;
-			firstNode = node;
-		}
-		
+		firstNode = node;
 	}
 	
 	
@@ -38,13 +38,13 @@ public class StringStackImpl implements StringStack{
 		if ( isEmpty() )
 			throw new NoSuchElementException( name );
 		
-		String removedItem = firstNode.data;
+		String removedItem = firstNode.getString();
 		
 		if ( firstNode == lastNode ) {
 			firstNode = lastNode = null;
 		}
 		else {
-			firstNode = firstNode.next;
+			firstNode = firstNode.getNext();
 		}
 		return removedItem;
 	}
@@ -54,9 +54,8 @@ public class StringStackImpl implements StringStack{
 		if(isEmpty()) {
 			throw new NoSuchElementException(name);
 		}
-		
-		String returnedNode = firstNode.data;
-		return returnedNode;
+
+		return firstNode.getString();
 	}
 	
 	
@@ -71,8 +70,8 @@ public class StringStackImpl implements StringStack{
 		
 		while ( current != null )
 		{
-			stream.printf( "%s ", current.data );
-			current = current.next;
+			stream.printf( "%s ", current.getString() );
+			current = current.getNext();
 		}
 
 		stream.println( "\n" );
@@ -90,7 +89,7 @@ public class StringStackImpl implements StringStack{
 		while ( current != null )
 		{
 			i++;
-			current = current.next;
+			current = current.getNext();
 		}
 		return i;
 	}

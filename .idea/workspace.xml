@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e20071ed-35b2-433e-b27d-d36decff3e8e" name="Changes" comment="Final Commit" />
+    <list default="true" id="e20071ed-35b2-433e-b27d-d36decff3e8e" name="Changes" comment="warnings fixes">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IntQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/interfaces/IntQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IntQueueImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/structures/IntQueueImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NetBenefit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/runnables/NetBenefit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QueueNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/objects/QueueNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/objects/StackNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/interfaces/StringStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringStackImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/structures/StringStackImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,12 +32,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="shares_trade_file" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="NetBenefit" />
+    <configuration name="NetBenefit" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.example.runnables.NetBenefit" />
       <module name="Shares Profit Calculator App" />
       <option name="PROGRAM_PARAMETERS" value="shares_trade_file.txt" />
       <method v="2">
@@ -65,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659212460240</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="warnings fixes">
+      <created>1659352824439</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659352824439</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -83,6 +101,7 @@
     <MESSAGE value="Setup" />
     <MESSAGE value="PDF ADD" />
     <MESSAGE value="Final Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final Commit" />
+    <MESSAGE value="warnings fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="warnings fixes" />
   </component>
 </project>
